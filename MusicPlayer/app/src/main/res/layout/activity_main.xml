@@ -22,15 +22,15 @@
         android:layout_height="wrap_content"
         android:id="@+id/no_songs_text"
         android:textColor="@color/black"
-        android:text="NO SONGS FOUND"
+        android:text="there are no songs in your library"
         android:layout_centerInParent="true"
         android:visibility="gone"/>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/recycler_view"
-        android:layout_below="@id/songs_text"/>
+        android:layout_below="@id/songs_text" />
 
 
 

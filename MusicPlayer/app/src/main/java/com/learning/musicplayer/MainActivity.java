@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.recycler_view);
         noMusicTextView = findViewById(R.id.no_songs_text);
 
-        if(checkPermission() == false){
+        if(!checkPermission()){
             requestPermission();
             return;
         }
