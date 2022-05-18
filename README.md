@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-<h2 align="center">Music Player with Android Studio</h3>
+<h1 align="center">Music Player with Android Studio</h3>
   <p align="center">
     <i>with additional sensor features<i>
     <br />
