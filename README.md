@@ -54,8 +54,6 @@ Distributed under the GNU General Public License. All programming languages, lib
 [![YouTube][youtube-shield]][youtube-url]
 [![Gmail][gmail-shield]][gmail-url]
 
-Project Link: [https://github.com/elifyagmurduran/repo_name](https://github.com/elifyagmurduran/repo_name)
-
 <!-- ## Acknowledgments -->
 
 <!-- MARKDOWN LINKS & IMAGES -->
