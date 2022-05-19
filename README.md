@@ -7,10 +7,10 @@
   <p align="center">
     <i>with additional sensor features<i>
     <br />
-    <a href="[https://github.com/elifyagmurduran/android_studio_musicplayer](https://github.com/elifyagmurduran/musicplayer_w_broadcastreceiver_androidhw3)"><strong>see the demo video here»</strong></a>
+    <a href="https://github.com/elifyagmurduran/musicplayer_w_broadcastreceiver_androidhw3"><strong>see the demo video here»</strong></a>
     <br />
           <br />
-    <a href="[https://github.com/elifyagmurduran/android_studio_musicplayer](https://github.com/elifyagmurduran/music_player_with_android_studio_hw2)"><strong>see part 1 of this project»</strong></a>
+    <a href="https://github.com/elifyagmurduran/music_player_with_android_studio_hw2"><strong>see part 1 of this project»</strong></a>
     <br />
   </p>
 </div>
