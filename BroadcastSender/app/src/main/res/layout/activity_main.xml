@@ -13,13 +13,7 @@
         android:id="@+id/text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Message"
+        android:text="Broadcast Sender App"
         android:textSize="20sp" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="sendBroadcast"
-        android:text="Send Broadcast" />
 
 </LinearLayout>

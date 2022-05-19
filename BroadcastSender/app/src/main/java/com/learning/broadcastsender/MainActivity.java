@@ -1,4 +1,5 @@
 package com.learning.broadcastsender;
+
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -21,29 +22,29 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void sendBroadcast(View v) {
-        Intent intent1 = new Intent("com.codinginflow.EXAMPLE_ACTION");
-        intent1.putExtra("com.codinginflow.EXTRA_TEXT", "Broadcast received");
-        sendBroadcast(intent1);
+        Intent intent = new Intent("com.broadcastreceiver.ACTION");
+        intent.putExtra("com.broadcastreceiver.TEXT", "Received.");
+        sendBroadcast(intent);
     }
 
-    private BroadcastReceiver myBroadcastReceiver = new BroadcastReceiver() {
+    private BroadcastReceiver broadcastReceiver = new BroadcastReceiver() {
         @Override
-        public void onReceive(Context context1, Intent intent1) {
-            String alert1 = intent1.getStringExtra("com.codinginflow.EXTRA_TEXT");
-            textView.setText(alert1);
+        public void onReceive(Context context, Intent intent) {
+            String receivedText = intent.getStringExtra("com.broadcastreceiver.TEXT");
+            textView.setText(receivedText);
         }
     };
 
     @Override
     protected void onStart() {
         super.onStart();
-        IntentFilter filter1 = new IntentFilter("com.codinginflow.EXAMPLE_ACTION");
-        registerReceiver(myBroadcastReceiver, filter1);
+        IntentFilter filter = new IntentFilter("com.broadcastreceiver.ACTION");
+        registerReceiver(broadcastReceiver, filter);
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        unregisterReceiver(myBroadcastReceiver);
+        unregisterReceiver(broadcastReceiver);
     }
 }
