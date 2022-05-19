@@ -7,7 +7,7 @@
   <p align="center">
     <i>with additional sensor features<i>
     <br />
-    <a href=""><strong>see the demo video here (if link is broken you can reach my yt channel below»</strong></a>
+    <a href="https://www.youtube.com/channel/UCSknj28cl-5IPLXNUMJmxdg"><strong>see the demo video here (if link is broken you can reach my yt channel below»</strong></a>
     <br />
           <br />
     <a href="https://github.com/elifyagmurduran/music_player_with_android_studio_hw2"><strong>see part 1 of this project»</strong></a>
