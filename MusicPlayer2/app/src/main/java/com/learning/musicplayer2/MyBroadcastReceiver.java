@@ -8,9 +8,9 @@ import android.widget.Toast;
 public class MyBroadcastReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
-        if ("music stops".equals(intent.getAction())) {
-            String receivedText = intent.getStringExtra("music goes on");
-            Toast.makeText(context, receivedText, Toast.LENGTH_SHORT).show();
+        if ("com.learning.musicplayer2".equals(intent.getAction())) {
+            String alert = intent.getStringExtra("com.learning.musicplayer2");
+            Toast.makeText(context, alert, Toast.LENGTH_SHORT).show();
         }
     }
 

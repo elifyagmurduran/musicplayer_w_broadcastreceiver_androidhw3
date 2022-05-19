@@ -2,6 +2,7 @@ package com.learning.musicplayer2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.IntentFilter;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
@@ -26,6 +27,7 @@ public class MusicPlayerActivity extends AppCompatActivity {
     MediaPlayer mediaPlayer = Player.getInstance();
     int x=0;
 
+    MyBroadcastReceiver myBroadcastReceiver = new MyBroadcastReceiver();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -85,7 +87,15 @@ public class MusicPlayerActivity extends AppCompatActivity {
             }
         });
 
+        IntentFilter filter = new IntentFilter("EXAMPLE_ACTION");
+        registerReceiver(myBroadcastReceiver, filter);
 
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        unregisterReceiver(myBroadcastReceiver);
     }
 
     void musicResourceSetter(){
